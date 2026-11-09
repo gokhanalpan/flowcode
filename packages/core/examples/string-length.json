@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "name": "Length of a string",
+  "main": [
+    { "id": "b1", "kind": "declare", "name": "text", "type": "string" },
+    { "id": "b2", "kind": "output", "value": "\"Type something: \"", "newline": false },
+    { "id": "b3", "kind": "input", "target": "text" },
+    { "id": "b4", "kind": "output", "value": "\"That is \" + len(text) + \" characters long\"" }
+  ],
+  "functions": []
+}

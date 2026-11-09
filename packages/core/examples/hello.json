@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "name": "Hello",
+  "main": [
+    { "id": "b1", "kind": "comment", "text": "İlk program / First program" },
+    { "id": "b2", "kind": "output", "value": "\"Merhaba Dünya!\"" },
+    { "id": "b3", "kind": "output", "value": "\"Hello, World!\"" }
+  ],
+  "functions": []
+}

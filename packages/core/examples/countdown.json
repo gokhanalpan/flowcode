@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "name": "Countdown",
+  "main": [
+    { "id": "b1", "kind": "declare", "name": "i", "type": "int" },
+    { "id": "b2", "kind": "declare", "name": "k", "type": "int" },
+    { "id": "b3", "kind": "for", "variable": "i", "from": "5", "to": "1", "step": -1,
+      "body": [ { "id": "b4", "kind": "output", "value": "i" } ] },
+    { "id": "b5", "kind": "assign", "target": "k", "value": "0" },
+    { "id": "b6", "kind": "while", "condition": "k < 3",
+      "body": [
+        { "id": "b7", "kind": "assign", "target": "k", "value": "k + 1" },
+        { "id": "b8", "kind": "output", "value": "\"k=\" + k" }
+      ] }
+  ],
+  "functions": []
+}

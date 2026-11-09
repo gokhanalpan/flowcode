@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "name": "FizzBuzz",
+  "main": [
+    { "id": "b1", "kind": "declare", "name": "i", "type": "int" },
+    { "id": "b2", "kind": "for", "variable": "i", "from": "1", "to": "15",
+      "body": [
+        { "id": "b3", "kind": "if", "condition": "i % 3 == 0 and i % 5 == 0",
+          "then": [ { "id": "b4", "kind": "output", "value": "\"FizzBuzz\"" } ],
+          "else": [
+            { "id": "b5", "kind": "if", "condition": "i % 3 == 0",
+              "then": [ { "id": "b6", "kind": "output", "value": "\"Fizz\"" } ],
+              "else": [
+                { "id": "b7", "kind": "if", "condition": "i % 5 == 0",
+                  "then": [ { "id": "b8", "kind": "output", "value": "\"Buzz\"" } ],
+                  "else": [ { "id": "b9", "kind": "output", "value": "i" } ] }
+              ] }
+          ] }
+      ] }
+  ],
+  "functions": []
+}

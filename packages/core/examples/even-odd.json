@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "name": "Tek mi çift mi?",
+  "main": [
+    { "id": "b1", "kind": "declare", "name": "n", "type": "int" },
+    { "id": "b2", "kind": "output", "value": "\"Bir sayı girin:\"" },
+    { "id": "b3", "kind": "input", "target": "n" },
+    { "id": "b4", "kind": "if", "condition": "n mod 2 = 0",
+      "then": [ { "id": "b5", "kind": "output", "value": "n + \" çift\"" } ],
+      "else": [ { "id": "b6", "kind": "output", "value": "n + \" tek\"" } ] }
+  ],
+  "functions": []
+}

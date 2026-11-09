@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "name": "Guess the number",
+  "main": [
+    { "id": "b1", "kind": "declare", "name": "secret", "type": "int" },
+    { "id": "b2", "kind": "declare", "name": "guess", "type": "int" },
+    { "id": "b3", "kind": "declare", "name": "tries", "type": "int" },
+    { "id": "b4", "kind": "assign", "target": "secret", "value": "7" },
+    { "id": "b5", "kind": "assign", "target": "tries", "value": "0" },
+    { "id": "b6", "kind": "doWhile",
+      "body": [
+        { "id": "b7", "kind": "output", "value": "\"Guess: \"", "newline": false },
+        { "id": "b8", "kind": "input", "target": "guess" },
+        { "id": "b9", "kind": "assign", "target": "tries", "value": "tries + 1" },
+        { "id": "b10", "kind": "if", "condition": "guess < secret",
+          "then": [ { "id": "b11", "kind": "output", "value": "\"Too low\"" } ],
+          "else": [
+            { "id": "b12", "kind": "if", "condition": "guess > secret",
+              "then": [ { "id": "b13", "kind": "output", "value": "\"Too high\"" } ],
+              "else": [] }
+          ] },
+        { "id": "b14", "kind": "if", "condition": "tries >= 5",
+          "then": [
+            { "id": "b15", "kind": "output", "value": "\"Out of tries\"" },
+            { "id": "b16", "kind": "break" }
+          ],
+          "else": [] }
+      ],
+      "condition": "guess != secret" },
+    { "id": "b17", "kind": "if", "condition": "guess == secret",
+      "then": [ { "id": "b18", "kind": "output", "value": "\"Got it in \" + tries + \" tries\"" } ],
+      "else": [] }
+  ],
+  "functions": []
+}

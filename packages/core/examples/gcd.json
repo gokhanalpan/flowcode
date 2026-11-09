@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "name": "GCD (recursive function)",
+  "main": [
+    { "id": "b1", "kind": "declare", "name": "x", "type": "int" },
+    { "id": "b2", "kind": "declare", "name": "y", "type": "int" },
+    { "id": "b3", "kind": "input", "target": "x" },
+    { "id": "b4", "kind": "input", "target": "y" },
+    { "id": "b5", "kind": "output", "value": "\"gcd = \" + gcd(x, y)" }
+  ],
+  "functions": [
+    {
+      "name": "gcd",
+      "params": [ { "name": "a", "type": "int" }, { "name": "b", "type": "int" } ],
+      "returns": "int",
+      "body": [
+        { "id": "f1", "kind": "if", "condition": "b == 0",
+          "then": [ { "id": "f2", "kind": "return", "value": "a" } ],
+          "else": [ { "id": "f3", "kind": "return", "value": "gcd(b, a % b)" } ] }
+      ]
+    }
+  ]
+}

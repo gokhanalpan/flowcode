@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "name": "Prime numbers up to 100",
+  "main": [
+    { "id": "b1", "kind": "declare", "name": "n", "type": "int" },
+    { "id": "b2", "kind": "declare", "name": "d", "type": "int" },
+    { "id": "b3", "kind": "declare", "name": "isPrime", "type": "bool" },
+    { "id": "b4", "kind": "for", "variable": "n", "from": "2", "to": "100",
+      "body": [
+        { "id": "b5", "kind": "assign", "target": "isPrime", "value": "true" },
+        { "id": "b6", "kind": "assign", "target": "d", "value": "2" },
+        { "id": "b7", "kind": "while", "condition": "d * d <= n",
+          "body": [
+            { "id": "b8", "kind": "if", "condition": "n % d == 0",
+              "then": [
+                { "id": "b9", "kind": "assign", "target": "isPrime", "value": "false" },
+                { "id": "b10", "kind": "break" }
+              ],
+              "else": [] },
+            { "id": "b11", "kind": "assign", "target": "d", "value": "d + 1" }
+          ] },
+        { "id": "b12", "kind": "if", "condition": "isPrime",
+          "then": [ { "id": "b13", "kind": "output", "value": "n + \" \"", "newline": false } ],
+          "else": [] }
+      ] },
+    { "id": "b14", "kind": "output", "value": "\"\"" }
+  ],
+  "functions": []
+}

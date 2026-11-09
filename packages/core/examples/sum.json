@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "name": "Sum of two numbers",
+  "main": [
+    { "id": "b1", "kind": "declare", "name": "a", "type": "int" },
+    { "id": "b2", "kind": "declare", "name": "b", "type": "int" },
+    { "id": "b3", "kind": "declare", "name": "total", "type": "int" },
+    { "id": "b4", "kind": "output", "value": "\"First number: \"", "newline": false },
+    { "id": "b5", "kind": "input", "target": "a" },
+    { "id": "b6", "kind": "output", "value": "\"Second number: \"", "newline": false },
+    { "id": "b7", "kind": "input", "target": "b" },
+    { "id": "b8", "kind": "assign", "target": "total", "value": "a + b" },
+    { "id": "b9", "kind": "output", "value": "\"Sum: \" + total" }
+  ],
+  "functions": []
+}

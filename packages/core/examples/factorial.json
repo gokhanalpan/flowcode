@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "name": "Factorial",
+  "main": [
+    { "id": "b1", "kind": "declare", "name": "n", "type": "int" },
+    { "id": "b2", "kind": "declare", "name": "i", "type": "int" },
+    { "id": "b3", "kind": "declare", "name": "result", "type": "int" },
+    { "id": "b4", "kind": "input", "target": "n" },
+    { "id": "b5", "kind": "assign", "target": "result", "value": "1" },
+    { "id": "b6", "kind": "for", "variable": "i", "from": "1", "to": "n",
+      "body": [ { "id": "b7", "kind": "assign", "target": "result", "value": "result * i" } ] },
+    { "id": "b8", "kind": "output", "value": "\"n! = \" + result" }
+  ],
+  "functions": []
+}

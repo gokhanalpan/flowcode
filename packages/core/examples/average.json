@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "name": "Average of an array",
+  "main": [
+    { "id": "b1", "kind": "declare", "name": "n", "type": "int" },
+    { "id": "b2", "kind": "input", "target": "n" },
+    { "id": "b3", "kind": "declare", "name": "values", "type": "real", "size": "n" },
+    { "id": "b4", "kind": "declare", "name": "i", "type": "int" },
+    { "id": "b5", "kind": "declare", "name": "total", "type": "real" },
+    { "id": "b6", "kind": "assign", "target": "total", "value": "0" },
+    { "id": "b7", "kind": "for", "variable": "i", "from": "0", "to": "n - 1",
+      "body": [
+        { "id": "b8", "kind": "input", "target": "values", "index": "i" },
+        { "id": "b9", "kind": "assign", "target": "total", "value": "total + values[i]" }
+      ] },
+    { "id": "b10", "kind": "declare", "name": "avg", "type": "real" },
+    { "id": "b11", "kind": "assign", "target": "avg", "value": "total / n" },
+    { "id": "b12", "kind": "output", "value": "\"Average: \" + avg" },
+    { "id": "b13", "kind": "output", "value": "\"Count: \" + len(values)" }
+  ],
+  "functions": []
+}
